@@ -18,11 +18,11 @@ development:
   adapter: mysql
   encoding: utf8
   reconnect: false
-  database: vcc_development
+  database: vcc_production
   pool: 5
-  username: root
-  password: 
-  host: localhost
+  username: vcc
+  password: vcc
+  host: 174.143.210.109
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
