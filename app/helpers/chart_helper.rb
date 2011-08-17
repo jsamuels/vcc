@@ -9,7 +9,9 @@ module ChartHelper
       when "trend_labch"
         225   
       when /patch_de|proof_details/
-        xml = REXML::Document.new(chart_xml)
+        test1 = chart_xml.sub( "&dataXML=", "")
+        xml = REXML::Document.new(test1)
+        #xml = REXML::Document.new(chart_xml)
         count = 100
         xml.elements.each("//set label") do |x|
           count += 11
