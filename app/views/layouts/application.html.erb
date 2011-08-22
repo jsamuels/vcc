@@ -89,7 +89,9 @@
 			</div>
 			<!-- end Accordion -->
 			<br/>
-			 <%= link_to "FieldSupportForm", "fieldsupportform.html" %> 
+			<%= render(:partial => "layouts/support" ) %>
+			
+			 
 			
 			<p class="incr"><%= link_to "ColorSpace", "http://stor01.colorspace.net/imoppp/login.jsp" %> <br/>
 				<%= link_to "Logout", :controller => 'login', :action => 'logout' %> 
